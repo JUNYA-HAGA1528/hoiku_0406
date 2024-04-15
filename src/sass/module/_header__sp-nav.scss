@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.sp-nav{
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFE9E9;
+    width: 100%;
+    z-index: 8888;
+    transform: translateX(-100%);
+    transition: ease .3s;
+    @include mq(md){
+        display: none;
+    }
+}
+
+.header__sp-nav.is-open{
+    transform: translateX(0);
+}
+
+.sp-nav__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sp-nav__items + .sp-nav__items{
+    margin-top: rem(16);
+}
+
+.sp-nav__item a{
+    display: inline-block;
+    width: 100%;
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(18/16);
+}

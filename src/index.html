@@ -1,41 +1,177 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="noindex" />
-  <!-- meta情報 -->
-  <title>CodeUps</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./assets/js/script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+
+    <!-- meta情報 -->
+    <title>保育園</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+
+    <!-- ファビコン -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./assets/js/script.js"></script>
 </head>
+
 <body>
-  <header>
 
-  </header>
-  <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
+    <!-- header -->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="index.html" class="header__logoLink">
+                    <img src="./assets/images/common/header-logo.png" alt="ヘッダーロゴ">
+                </a>
+            </h1>
+            <button class="header__hamburger js-hamburger">
+                <a class="btn btn--header" href="">資料ダウンロード</a>
+                <a class="btn btn--header" href="">お問い合わせ</a>
+                <div class="aaa">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            
+            <!-- headerメニュー sp -->
+            <nav class="header__sp-nav sp-nav js-drawer-menu">
+                <div class="sp-nav__wrapper">
+                    <div class="sp-nav__body">
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="campaign.html">園について</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="about.html">園のこだわり</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="information.html">園での生活</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="blog.html">一時保育</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="voice.html">入園の案内</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- headerメニュー pc -->
+            <nav class="header__pc-nav pc-nav u-desktop">
+                <ul class="pc-nav__list">
+                    <li class="pc-nav__item">
+                        <a href="campaign.html">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">園について</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="about.html">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">園のこだわり</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="information.html">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">園での生活</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="blog.html">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">一時保育</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="voice.html">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">入園の案内</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item pc-nav__item--faq">
+                        <a href="faq.html">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">見学</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="contact.html">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">お問合せ</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!--mv-->
+    <div class="mv">
+        <div class="mv__inner">
+
+            <picture>
+                <source srcset="./assets/images/common/mv.png" media="(min-width: 768px)">
+                <img src="./assets/images/common/mv-sp.png" alt="企業情報のメインビュー">
+            </picture>
+            <div class="mv__title">
+                <h1 class="mv__text">子どもたちの笑顔が<br>溢れる場所</h1>
+            </div>
+        </div>
     </div>
-  </main>
-  <footer>
-
-  </footer>
+    
 </body>
-
 </html>
