@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.features{
+    font-family: $second;
+    text-align: center;
+    position: relative;
+}
+
+.features::before {
+    background-image: url(../images/common/features-logo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(210);
+    left: calc(50% - min(50%, rem(500)));
+    width: rem(70);
+    height: rem(70);
+    z-index: 100;
+    @include mq(md){
+        background-image: url(../images/common/features-logo1.png);
+        bottom: rem(150);
+        width: rem(250);
+        height: rem(250);
+    }
+}
+
+.features-picture::before {
+    background-image: url(../images/common/features-logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(210);
+    right: calc(50% - min(50%, rem(500)));
+    width: rem(70);
+    height: rem(70);
+    z-index: 100;
+    @include mq(md){
+        background-image: url(../images/common/features-logo2.png);
+        bottom: rem(150);
+        width: rem(250);
+        height: rem(250);
+    }
+}
+
+.features__inner{
+
+}
+
+.features__title{
+    font-size: rem(24);
+    @include mq(md){
+        font-size: rem(40);
+        font-weight: $medium;
+        line-height: calc(50/40);
+    }
+}
+
+.features__subtitle{
+    margin-top: rem(20);
+    line-height: 2;
+    letter-spacing: 0.15em;
+}
+
+.features span {
+    color: $high-red;
+    font-weight: $bold;
+    font-size: rem(24);
+    @include mq(md){
+        font-size: rem(42);
+    }
+}
