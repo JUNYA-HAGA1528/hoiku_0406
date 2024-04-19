@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.news{
+    position: relative;
+}
+
+.news__bg{
+    position: absolute;
+    left: 0;
+    top: -85%;
+    width: 100%;
+    z-index: -10;
+}
+
+.news__bg img {
+    @include mq(md){
+        aspect-ratio: 1440/1150;
+        width: 100%;
+        height: rem(1150);
+        object-fit: cover;
+    }
+}
+
+.news__tab {
+    margin-top: rem(24);
+    display: flex;
+    justify-content: center;
+    gap: 0 rem(53);
+}
+
+.news__tab-list a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.news__tab-list a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.news__wrapper ul {
+    display: none;
+}
+
+.news__wrapper ul.news__list {
+    display: block;
+}
+
+.news__list{
+    margin-top: rem(50);
+}
+
+.news__button{
+    text-align: center;
+    margin-top: rem(50);
+}
+

@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.news-cards__flex{
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.news-cards__item + .news-cards__item {
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: rem(0);
+        margin-left: rem(46);
+    };
+}
+
+/* 枚数が増えたときのための処理 */
+.news-cards__item:nth-child(2n + 1){
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.news-cards__item:nth-child(n + 3){
+    @include mq(md){
+        margin-top: rem(20);
+    }
+}
+
+.news-cards__item{
+    @include mq(md){
+        max-width: calc(50% - rem(46) * 1 / 2 );
+        width: 100%;
+    }
+}
+
+.news-cards__item a {
+    color: #000;
+    display: block;
+    transition: all 0.7s ease;
+}
+
+.news-cards__item a:hover {
+    transform: scale(1.03);
+    font-weight: bold;
+}
+
