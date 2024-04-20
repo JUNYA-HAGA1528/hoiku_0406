@@ -7,9 +7,9 @@
 .commitment__bg{
     position: absolute;
     left: 0;
-    top: -20%;
+    top: -15%;
     width: 100%;
-    height: 145%;
+    height: 130%;
     z-index: -10;
 }
 
@@ -23,10 +23,10 @@
 .commitment__inner{
     max-width: $max-width;
     margin: auto;
-    padding: rem(20);
+    padding:0 rem(20);
     @include mq(md){
         max-width: rem(1400);
-        padding: rem(25);
+        padding: 0 rem(25);
     }
 }
 
