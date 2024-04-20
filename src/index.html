@@ -48,28 +48,21 @@
                     <img src="./assets/images/common/header-logo.png" alt="ヘッダーロゴ">
                 </a>
             </h1>
-            <button class="header__hamburger js-hamburger">
-                <a class="btn btn--header" href="">資料ダウンロード</a>
+            <div class="header__text">
+                <a class="btn btn--header" href="">見学</a>
                 <a class="btn btn--header" href="">お問い合わせ</a>
-                <div class="aaa">
+                <button class="header__hamburger  js-hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
-            </button>
+                </button>
+            </div>
 
             
             <!-- headerメニュー sp -->
             <nav class="header__sp-nav sp-nav js-drawer-menu">
                 <div class="sp-nav__wrapper">
                     <div class="sp-nav__body">
-                        <ul class="sp-nav__items">
-                            <li class="sp-nav__item">
-                                <div class="sp-nav__item-title">
-                                    <a href="campaign.html">園について</a>
-                                </div>
-                            </li>
-                        </ul>
                         <ul class="sp-nav__items">
                             <li class="sp-nav__item">
                                 <div class="sp-nav__item-title">
@@ -87,7 +80,7 @@
                         <ul class="sp-nav__items">
                             <li class="sp-nav__item">
                                 <div class="sp-nav__item-title">
-                                    <a href="blog.html">一時保育</a>
+                                    <a href="commitment.html">一時保育</a>
                                 </div>
                             </li>
                         </ul>
@@ -98,6 +91,13 @@
                                 </div>
                             </li>
                         </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="voice.html">求人関係</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -105,13 +105,6 @@
             <!-- headerメニュー pc -->
             <nav class="header__pc-nav pc-nav u-desktop">
                 <ul class="pc-nav__list">
-                    <li class="pc-nav__item">
-                        <a href="campaign.html">
-                            <div class="pc-nav__wrapper">
-                                <p class="pc-nav__ja">園について</p>
-                            </div>
-                        </a>
-                    </li>
                     <li class="pc-nav__item">
                         <a href="about.html">
                             <div class="pc-nav__wrapper">
@@ -127,7 +120,7 @@
                         </a>
                     </li>
                     <li class="pc-nav__item">
-                        <a href="blog.html">
+                        <a href="commitment.html">
                             <div class="pc-nav__wrapper">
                                 <p class="pc-nav__ja">一時保育</p>
                             </div>
@@ -143,6 +136,13 @@
                     <li class="pc-nav__item pc-nav__item--faq">
                         <a href="faq.html">
                             <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">求人関係</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item pc-nav__item--faq">
+                        <a href="faq.html">
+                            <div class="pc-nav__wrapper">
                                 <p class="pc-nav__ja">見学</p>
                             </div>
                         </a>
@@ -150,7 +150,7 @@
                     <li class="pc-nav__item">
                         <a href="contact.html">
                             <div class="pc-nav__wrapper">
-                                <p class="pc-nav__ja">お問合せ</p>
+                                <p class="pc-nav__ja">お問い合わせ</p>
                             </div>
                         </a>
                     </li>
@@ -341,6 +341,81 @@
 
 
 
+    <section class="top-commitment commitment">
+        <div class="commitment__bg">
+            <img src="./assets/images/common/news-bg.png" alt="水面のアップ">
+        </div>
+        <div class="commitment__inner inner">
+            <div class="commitment__title section-title">
+                <h2 class="section-title__text">園について</h2>
+            </div>
+            
+            <ul class="commitment__list commitment-cards">
+                <li class="commitment-cards__item commitment-card">
+                    <a href="" class="commitment-card__link">
+                        <div class="commitment-card__img">
+                            <img src="./assets/images/common/mv.png" alt="海中にある珊瑚">
+                        </div>
+                    </a>
+                    <div class="commitment-card__content">
+                        <h3 class="commitment-card__title">園のこだわり</h3>
+                        <p class="commitment-card__subtitle">保育理念・方針</p>
+                        <p class="commitment-card__text">
+                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                        </p>
+                    </div>
+                    <div class="commitment__button">
+                        <a href="information.html" class="button"><span>情報一覧</span></a>
+                    </div>
+        
+                </li>
+
+                <li class="commitment-cards__item commitment-card">
+                    <a href="" class="commitment-card__link">
+                        <div class="commitment-card__img">
+                            <img src="./assets/images/common/mv.png" alt="ウミガメのアップ">
+                        </div>
+                    </a>
+                    <div class="commitment-card__content">
+                        <h3 class="commitment-card__title">園での生活</h3>
+                        <p class="commitment-card__subtitle">1日の流れ</p>
+                        <p class="commitment-card__text">
+                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                        </p>
+                    </div>
+                    <div class="commitment__button">
+                        <a href="information.html" class="button"><span>情報一覧</span></a>
+                    </div>
+
+                </li>
+
+                <li class="commitment-cards__item commitment-card">
+                    <a href="" class="commitment-card__link">
+                        <div class="commitment-card__img">
+                            <img src="./assets/images/common/mv.png" alt="イソギンチャクとカクレクマノミ">
+                        </div>
+                    </a>
+                    <div class="commitment-card__content">
+                        <h3 class="commitment-card__title">一時保育</h3>
+                        <p class="commitment-card__subtitle">受付方法</p>
+                        <p class="commitment-card__text">
+                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                        </p>
+                    </div>
+                    <div class="commitment__button">
+                        <a href="information.html" class="button"><span>情報一覧</span></a>
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <div class="main-bg">
+        <img src="./assets/images/common/" alt="">
+    </div>
 
 
 
@@ -360,22 +435,9 @@
 
 
     
-    <div class="campaign__title section-title">
-        <h2 class="section-title__text">園での生活</h2>
-    </div>
-
-    <div class="campaign__title section-title">
-        <h2 class="section-title__text">園の紹介</h2>
-    </div>
-
-    <div class="campaign__title section-title">
-        <h2 class="section-title__text">一時保育</h2>
-    </div>
 
 
-    <div class="campaign__title section-title">
-        <h2 class="section-title__text">入園案内</h2>
-    </div>
+
 
     
 </body>

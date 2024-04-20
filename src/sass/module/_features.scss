@@ -14,12 +14,13 @@
     position: absolute;
     content: "";
     bottom: rem(210);
-    left: calc(50% - min(50%, rem(500)));
-    width: rem(70);
-    height: rem(70);
+    left: calc(50% - min(50%, rem(200)));
+    width: rem(100);
+    height: rem(100);
     z-index: 100;
     @include mq(md){
         background-image: url(../images/common/features-logo1.png);
+        left: calc(50% - min(50%, rem(500)));
         bottom: rem(150);
         width: rem(250);
         height: rem(250);
@@ -34,13 +35,14 @@
     position: absolute;
     content: "";
     bottom: rem(210);
-    right: calc(50% - min(50%, rem(500)));
-    width: rem(70);
-    height: rem(70);
+    right: calc(50% - min(50%, rem(200)));
+    width: rem(100);
+    height: rem(100);
     z-index: 100;
     @include mq(md){
         background-image: url(../images/common/features-logo2.png);
         bottom: rem(150);
+        right: calc(50% - min(50%, rem(500)));
         width: rem(250);
         height: rem(250);
     }

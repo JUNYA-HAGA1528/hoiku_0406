@@ -2,5 +2,8 @@
 
 .top-news{
     margin-top: rem(70);
-    padding-bottom: rem(50);
+    padding-bottom: rem(112);
+    @include mq(md){
+        padding-bottom: rem(50);
+    }
 }

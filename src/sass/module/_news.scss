@@ -4,6 +4,11 @@
     position: relative;
 }
 
+.news__inner{
+    max-width: $max-width;
+    margin: auto;
+}
+
 .news__bg{
     position: absolute;
     left: 0;

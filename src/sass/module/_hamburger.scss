@@ -1,6 +1,6 @@
 @use "global" as *;
   
-.header__hamburger{
+.header__text{
     z-index:9999;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@
     }
 }
 
-.header__hamburger span {
+.header__text span {
     position: relative;
     display: block;
     height: rem(2.4);
@@ -78,11 +78,11 @@ body.fixed {
     box-shadow: none;
     margin: 0 0 0 8px;
     padding: 0 8px;
-    width: auto;
+    width: rem(80);
 }
 
 
-.aaa{
+.header__hamburger{
     margin-left: rem(10);
     @include mq(md){
         margin-left: rem(0);
