@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .commitment{
     position: relative;
@@ -20,22 +20,26 @@
     object-fit: cover;
 }
 
-
 .commitment__inner{
     max-width: $max-width;
     margin: auto;
+    padding: rem(20);
+    @include mq(md){
+        max-width: rem(1400);
+        padding: rem(25);
+    }
 }
 
 .commitment__list{
     margin-top: rem(24);
     padding: 0 rem(6);
     @include mq(md){
-        margin-top: rem(40);
+        margin-top: rem(70);
         padding: 0;
     }
 }
 
 .commitment__button{
     text-align: center;
-    margin-top: rem(30);
+    margin-top: rem(60);
 }

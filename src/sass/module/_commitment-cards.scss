@@ -1,4 +1,4 @@
-@use 'global' as *;
+@use "global" as *;
 
 .commitment-cards{
     @include mq(md){
@@ -8,19 +8,18 @@
 }
 
 .commitment-cards__item{
-    background-color: $white;
-    padding: rem(16) rem(16) rem(23) rem(16);
+    position: relative;
     @include mq(md){
-        max-width: calc(33.3333% - 2.5rem * 2 / 3 );
+        max-width: calc(33.3333% - 2rem * 2 / 3 );
         width: 100%;
     }
 }
 
 .commitment-cards__item + .commitment-cards__item{
-    margin-top: rem(40);
+    margin-top: rem(80);
     @include mq(md){
         margin-top: 0;
-        margin-left: rem(40);
+        margin-left: rem(32);
     }
 }
 

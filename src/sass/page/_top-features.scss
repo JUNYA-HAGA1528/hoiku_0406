@@ -3,6 +3,7 @@
 .top-features{
     margin-top: rem(70);
     @include mq(md){
-        margin-top: rem(130);
+        margin-top: rem(200);
+        padding-bottom: rem(50);
     }
 }

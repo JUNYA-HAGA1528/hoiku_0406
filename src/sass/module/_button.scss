@@ -2,9 +2,9 @@
 
 .button{
     position: relative;
-	background-color: $low-red;
+    background-color: rgba(255,233,233,1);/* 変化の色*/
 	border: rem(1) solid $low-red;
-	color: $white;
+	color: $high-red;
 	display: inline-block;
     padding: rem(10) 0;
     width: rem(180);
@@ -16,6 +16,9 @@
 	z-index: 1;
     cursor: pointer;
 	border-radius: rem(50);
+	letter-spacing: 1em;
+	text-indent: 1em;
+
 }
 
 .button:hover {
@@ -47,5 +50,4 @@
 }
 
 .button span {
-	letter-spacing: 1em;
 }

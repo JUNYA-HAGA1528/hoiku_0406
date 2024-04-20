@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.main-bg__img{
+    background-image: url(../images/common/main-bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: rem(400);
+    margin-top: rem(240);
+}
