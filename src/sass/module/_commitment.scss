@@ -4,6 +4,28 @@
     position: relative;
 }
 
+.commitment::before {
+    background-image: url(../images/common/commitment-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(-60);
+    left: calc(50% - min(50%, rem(500)));
+    width: rem(100);
+    height: rem(100);
+    z-index: 100;
+    @include mq(md){
+        background-image: url(../images/common/commitment-logo.png);
+        top: rem(30);
+        left: calc(50% - min(50%, rem(350)));
+        width: rem(100);
+        height: rem(100);
+    }
+}
+
+
 .commitment__bg{
     position: absolute;
     left: 0;
