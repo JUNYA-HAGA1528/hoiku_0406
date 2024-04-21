@@ -4,7 +4,14 @@
     font-family: $second;
     text-align: center;
     position: relative;
+    background-image: url(../images/common/test2.png);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: contain;   
+    height: rem(500); 
 }
+
+
 
 .features::before {
     background-image: url(../images/common/features-logo1.png);
@@ -21,7 +28,7 @@
     @include mq(md){
         background-image: url(../images/common/features-logo1.png);
         left: calc(50% - min(50%, rem(500)));
-        bottom: rem(150);
+        bottom: rem(280);
         width: rem(250);
         height: rem(250);
     }
@@ -41,7 +48,7 @@
     z-index: 100;
     @include mq(md){
         background-image: url(../images/common/features-logo2.png);
-        bottom: rem(150);
+        bottom: rem(280);
         right: calc(50% - min(50%, rem(500)));
         width: rem(250);
         height: rem(250);
@@ -54,10 +61,12 @@
 
 .features__title{
     font-size: rem(24);
+    padding-top: rem(150);
     @include mq(md){
-        font-size: rem(40);
+        font-size: rem(56);
         font-weight: $medium;
         line-height: calc(50/40);
+        padding-top: rem(130);
     }
 }
 
@@ -72,6 +81,6 @@
     font-weight: $bold;
     font-size: rem(24);
     @include mq(md){
-        font-size: rem(42);
+        font-size: rem(64);
     }
 }

@@ -23,6 +23,7 @@
     }
 }
 
+
 /* 枚数が増えたときのための処理 */
 .commitment-cards__item:nth-child(3n + 1){
     @include mq(md){

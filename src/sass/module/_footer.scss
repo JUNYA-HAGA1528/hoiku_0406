@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.footer{
+    background-color: $low-red;
+    color: $white;
+    border-radius: 50% 50% 0 0;
+}
+
+.footer--padding{
+    padding:rem(48) 0 rem(70) ;
+    @include mq(md){
+        padding:rem(82) 0 rem(70) ;
+    }
+}
+
+.footer__inner{
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.footer__body{
+    display: flex;
+    justify-content: space-around;
+    margin-top: rem(14);
+    @include mq(md){
+        margin-top: rem(0);
+        
+    }
+}
+
+.footer__wrapper{
+    border-bottom: solid 1px $white ;
+    padding-top: rem(20);
+    padding-bottom: rem(50);
+    @include mq(md){
+        display: flex;
+    }
+}
+
+.footer__wrapper-space{
+    padding-left: rem(12);
+    @include mq(md){
+        padding-left: rem(0);
+    }
+}
+
+.footer__container{
+    margin-top: rem(12);
+}
+
+.footer__container--space{
+    @include mq(md){
+        padding-left: rem(18);
+    }
+}
+

@@ -31,10 +31,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     
     <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
     
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -51,7 +54,7 @@
                 </a>
             </h1>
             <div class="header__text">
-                <a class="btn btn--header" href="">見学</a>
+                <a class="btn btn--header" href="">求人関係</a>
                 <a class="btn btn--header" href="">お問い合わせ</a>
                 <button class="header__hamburger  js-hamburger">
                     <span></span>
@@ -96,7 +99,7 @@
                         <ul class="sp-nav__items">
                             <li class="sp-nav__item">
                                 <div class="sp-nav__item-title">
-                                    <a href="voice.html">求人関係</a>
+                                    <a href="voice.html">見学</a>
                                 </div>
                             </li>
                         </ul>
@@ -138,14 +141,14 @@
                     <li class="pc-nav__item pc-nav__item--faq">
                         <a href="faq.html">
                             <div class="pc-nav__wrapper">
-                                <p class="pc-nav__ja">求人関係</p>
+                                <p class="pc-nav__ja">見学</p>
                             </div>
                         </a>
                     </li>
                     <li class="pc-nav__item pc-nav__item--faq">
                         <a href="faq.html">
                             <div class="pc-nav__wrapper">
-                                <p class="pc-nav__ja">見学</p>
+                                <p class="pc-nav__ja">求人関係</p>
                             </div>
                         </a>
                     </li>
@@ -377,12 +380,12 @@
                                 </p>
                             </div>
                             <div class="commitment__button">
-                                <a href="information.html" class="button">詳細</a>
+                                <a href="information.html" class="button">詳細を見る</a>
                             </div>
                         </div>
                     </div> 
                 </li>
-                <li class="commitment-cards__item">
+                <li class="commitment-cards__item commitment-cards__item--margin">
                     <div class="commitment-card">
                         <div class="commitment-card__number">2</div>
                         <div class="commitment-card__body">
@@ -397,7 +400,7 @@
                                 </p>
                             </div>
                             <div class="commitment__button">
-                                <a href="information.html" class="button">詳細</a>
+                                <a href="information.html" class="button">詳細を見る</a>
                             </div>
                         </div>
                     </div>
@@ -417,7 +420,7 @@
                                 </p>
                             </div>
                             <div class="commitment__button">
-                                <a href="information.html" class="button">詳細</a>
+                                <a href="information.html" class="button">詳細を見る</a>
                             </div>
                         </div>
                     </div>
@@ -439,32 +442,188 @@
         information 
     ------------------------------------------->
     <section class="top-information information">
+        <div class="information__bg">
+            <img src="./assets/images/common/news-bg.png" alt="水面のアップ">
+        </div>
+
         <div class="information__inner inner">
             <div class="information__title section-title">
                 <h2 class="section-title__text">入園の案内</h2>
             </div>
 
+            <div class="information__flex">
+                <div class="information__img colorbox js-colorbox">
+                    <img src="./assets/images/common/mv.png" alt="イソギンチャクとオレンジの魚">
+                </div>
+                
+                <div class="information__content">
+                    <h3 class="information__content-title">ライセンス講習</h3>
+                    <p class="information__text">
+                        当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
+                        正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
+                    </p>
+                    <div class="information__button">
+                        <a href="information.html" class="button">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
 
 
+    <!-----------------------------------------
+        visit 
+    ------------------------------------------->
+    <section class="top-visit visit">
+        <div class="visit__title section-title">
+            <h2 class="section-title__text">見学</h2>
+        </div>
+
+        <div class="visit__slider swiper js-visit-swiper">
+            <div class="swiper__items swiper-wrapper">
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper1">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper2">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper3">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper4">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper1">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper2">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper3">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper4">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper1">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper2">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper3">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper4">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper1">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper2">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper3">
+                </div>
+                <div class="swiper__img swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="swiper4">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
+    <!-----------------------------------------
+        footer
+    ------------------------------------------->
+    <footer class="top-footer footer">
+        <div class="footer__inner inner">
+            <div class="footer__body">
+                <div class="footer__wrapper ">
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="campaign.html">キャンペーン</a>
+                                </div>
+                                <div class="footer-nav__item-normal">
+                                    <a href="campaign.html#campaign">ライセンス取得</a>
+                                    <a href="campaign.html#campaign">貸切体験ダイビング</a>
+                                    <a href="campaign.html#campaign">ナイトダイビング</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="campaign.html">キャンペーン</a>
+                                </div>
+                                <div class="footer-nav__item-normal">
+                                    <a href="campaign.html#campaign">ライセンス取得</a>
+                                    <a href="campaign.html#campaign">貸切体験ダイビング</a>
+                                    <a href="campaign.html#campaign">ナイトダイビング</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="campaign.html">キャンペーン</a>
+                                </div>
+                                <div class="footer-nav__item-normal">
+                                    <a href="campaign.html#campaign">ライセンス取得</a>
+                                    <a href="campaign.html#campaign">貸切体験ダイビング</a>
+                                    <a href="campaign.html#campaign">ナイトダイビング</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="campaign.html">キャンペーン</a>
+                                </div>
+                                <div class="footer-nav__item-normal">
+                                    <a href="campaign.html#campaign">ライセンス取得</a>
+                                    <a href="campaign.html#campaign">貸切体験ダイビング</a>
+                                    <a href="campaign.html#campaign">ナイトダイビング</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="campaign.html">キャンペーン</a>
+                                </div>
+                                <div class="footer-nav__item-normal">
+                                    <a href="campaign.html#campaign">ライセンス取得</a>
+                                    <a href="campaign.html#campaign">貸切体験ダイビング</a>
+                                    <a href="campaign.html#campaign">ナイトダイビング</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-
-
-    
-
-
-
-
-    
+            <div class="footer-domicile domicile">
+                <div class="domicile__img">
+                    <img src="./assets/images/common/header-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

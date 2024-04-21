@@ -8,15 +8,14 @@
 .section-title__text::first-letter {
 	text-transform: capitalize;
     color: $high-red;
-	font-size: rem(42);
+	font-size: rem(56);
 }
 
 .section-title__text{
-	margin-top: rem(6);
 	font-size: rem(24);
     line-height: calc(40/28);
 	letter-spacing: 0.1em;
 	@include mq(md){
-		font-size: rem(36);
+		font-size: rem(48);
 	}
 }
