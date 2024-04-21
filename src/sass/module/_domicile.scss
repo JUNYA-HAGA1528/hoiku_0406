@@ -1,2 +1,30 @@
 @use "global" as *;
 
+.domicile__flex{
+    display: flex;
+}
+
+.domicile__img {
+    width:rem(102) ;
+    position: relative;/* z-indexをきかせるため */
+    z-index: 9999;
+    @include mq(md){
+        width: rem(133);
+    }
+}
+
+.domicile__left{
+    width: 40%;
+}
+
+.domicile__right{
+    aspect-ratio: 360/177;
+    height: rem(177);
+    object-fit: cover;
+    height: rem(177);
+    @include mq(md){
+        aspect-ratio: 300/220;
+        width: 60%;
+        height: rem(220);
+    }
+}

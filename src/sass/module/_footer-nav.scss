@@ -29,18 +29,6 @@
     }
 }
 
-.footer-nav__item-title a::before {
-    background-image: url(../images/common/starfish.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    content: "";
-    left: 0;
-    width: rem(18);
-    height: rem(18);
-}
-
 .footer-nav__item-normal a {
     font-weight: $regular;
     padding-top: rem(12);
