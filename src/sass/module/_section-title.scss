@@ -19,3 +19,30 @@
 		font-size: rem(48);
 	}
 }
+
+
+
+
+
+/* 左右に斜め線(両端を丸く) */
+.section-title {
+	align-items: center; /* 線を上下中央 */
+	display: flex; /* 文字と線を横並び */
+	justify-content: center; /* 文字を中央寄せ */
+  }
+  .section-title::before,
+  .section-title::after {
+	background-color: $high-red; /* 線の色 */
+	border-radius: 5px; /* 線の両端を丸く */
+	content: "";
+	height: 5px; /* 線の高さ */
+	width: rem(80); /* 線の長さ */
+  }
+  .section-title::before {
+	margin-right: 10px; /* 文字との余白 */
+	transform: rotate(60deg); /* 傾ける */
+  }
+  .section-title::after {
+	margin-left: 10px; /* 文字との余白 */
+	transform: rotate(-60deg); /* 傾ける */
+  }
