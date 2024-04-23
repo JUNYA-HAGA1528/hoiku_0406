@@ -48,3 +48,23 @@
 .footer__contact{
     margin-top: rem(100);
 }
+
+/* copyright */
+.footer__copyright{
+    display: block;
+    margin-top: rem(25);
+    text-align: center;
+    white-space: nowrap;
+    @include mq(md){
+        margin-top: rem(67);
+    }
+}
+
+.footer__copyright small {
+    font-size: rem(12);
+    font-weight: $normal;
+    line-height: calc(18/12);
+    @include mq(md){
+        letter-spacing: 0.085em;
+    }
+}

@@ -3,6 +3,7 @@
 .contact{
     background-color: $high-red;
     color: $white;
+    border-radius: rem(15);
 }
 
 .contact__inner{
@@ -10,7 +11,7 @@
     margin: auto;
     @include mq(md){
         max-width: rem(1300);
-        padding: rem(44) rem(50) rem(51);
+        padding: rem(44) rem(50) rem(44);
     }
 }
 
@@ -43,8 +44,12 @@
     align-items: center;
     padding: rem(37.5) rem(45) rem(43) rem(28);
     @include mq(md){
-        padding: rem(64) rem(56) rem(72) rem(61);
+        padding: rem(64) rem(56);
     }
+}
+
+.contact__text{
+    letter-spacing: 0.1em;
 }
 
 .contact__text-en{
@@ -61,7 +66,6 @@
 .contact__text-jp{
     font-size: rem(16);
     line-height: calc(21/16);
-    letter-spacing: -0.1em;
     @include mq(md){
         font-size: rem(20);
         line-height: 1;
@@ -71,7 +75,4 @@
 .contact__img img{
     width: rem(66);
     height: rem(66);
-    @include mq(md){
-        margin-top: rem(5);
-    }
 }

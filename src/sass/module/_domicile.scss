@@ -2,6 +2,7 @@
 
 .domicile__flex{
     display: flex;
+    padding: 0 rem(40);
 }
 
 .domicile__img {
@@ -14,8 +15,10 @@
 }
 
 .domicile__left{
-    width: 40%;
+    width: 47%;
     font-size: rem(26);
+    font-weight: $bold;
+    letter-spacing: 0.05em;
 }
 
 .domicile__right{
@@ -25,11 +28,43 @@
     height: rem(177);
     @include mq(md){
         aspect-ratio: 300/220;
-        width: 60%;
+        width: 50%;
         height: rem(220);
+        margin-left: auto;
     }
 }
 
 .domicile__address{
     margin-top: rem(15);
+}
+
+.domicile__privacy{
+    margin-top: rem(30);
+}
+
+.domicile__privacy a {
+    position: relative;
+}
+
+.domicile__privacy a:hover{
+    opacity: 0.5;
+}
+
+.domicile__privacy a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: rem(3);
+    background: $white;
+    bottom: rem(20); /*アンダーラインが現れ始める位置（aタグの下辺からの高さ）*/
+    opacity: 0.5;
+    visibility: hidden;
+    transition: 0.3s;
+    }
+    
+    a:hover::after {
+    visibility: visible;
+    bottom: rem(-5); /*アニメーションが止まる位置*/
+    opacity: 1;
 }
