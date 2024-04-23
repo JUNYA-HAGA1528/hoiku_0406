@@ -3,7 +3,7 @@
 .footer{
     background-color: $low-red;
     color: $white;
-    border-radius: 50% 50% 0 0;
+    border-radius: rem(300) rem(300) 0 0;
 }
 
 .footer__inner{
@@ -39,4 +39,12 @@
 
 .footer__container{
     margin-top: rem(12);
+}
+
+.footer-domicile{
+    margin-top: rem(50);
+}
+
+.footer__contact{
+    margin-top: rem(100);
 }

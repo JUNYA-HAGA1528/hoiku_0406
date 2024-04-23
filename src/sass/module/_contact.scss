@@ -1,0 +1,77 @@
+@use "global" as *;
+
+.contact{
+    background-color: $high-red;
+    color: $white;
+}
+
+.contact__inner{
+    padding: rem(44) rem(15) rem(35);
+    margin: auto;
+    @include mq(md){
+        max-width: rem(1300);
+        padding: rem(44) rem(50) rem(51);
+    }
+}
+
+.contact__item{
+    @include mq(md){
+        display: flex;
+        justify-content: center;
+        gap:0 rem(42);
+    }
+}
+
+.contact__list{
+    @include mq(md){
+        width: rem(530);
+    }
+}
+
+.contact__list + .contact__list{
+    margin-top: rem(17);
+    @include mq(md){
+        margin-top: rem(0);
+    }
+}
+
+.contact__link{
+    border: solid 1px $white ;
+    border-radius: rem(9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(37.5) rem(45) rem(43) rem(28);
+    @include mq(md){
+        padding: rem(64) rem(56) rem(72) rem(61);
+    }
+}
+
+.contact__text-en{
+    font-size: rem(32);
+    font-weight: $bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    @include mq(md){
+        font-size: rem(40);
+        font-weight: $bold;
+    }
+}
+
+.contact__text-jp{
+    font-size: rem(16);
+    line-height: calc(21/16);
+    letter-spacing: -0.1em;
+    @include mq(md){
+        font-size: rem(20);
+        line-height: 1;
+    }
+}
+
+.contact__img img{
+    width: rem(66);
+    height: rem(66);
+    @include mq(md){
+        margin-top: rem(5);
+    }
+}

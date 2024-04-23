@@ -15,6 +15,7 @@
 
 .domicile__left{
     width: 40%;
+    font-size: rem(26);
 }
 
 .domicile__right{
@@ -27,4 +28,8 @@
         width: 60%;
         height: rem(220);
     }
+}
+
+.domicile__address{
+    margin-top: rem(15);
 }
