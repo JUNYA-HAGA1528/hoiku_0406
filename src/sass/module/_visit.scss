@@ -2,38 +2,33 @@
 
 
 .visit{
-    background-image: url(../images/common/test.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;   
-    height: rem(500); 
+    position: relative;
 }
 
-.visit__img{
-    margin-top: rem(16);
-    margin-right: calc(50% - 50vw);
-    @include mq(md){
-        margin-top: rem(-92.8);
-        margin-left: rem(32);
-   }
-}
-
-.visit__img img {
-    aspect-ratio: 377/288;
+.visit__bg{
+    position: absolute;
+    left: 0;
+    top: -25%;
     width: 100%;
-    height: auto;
+    height: 155%;
+    z-index: -10;
+}
+
+.visit__bg img {
+    aspect-ratio: 2560/1000;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    @include mq(md){
-        aspect-ratio: 618/474;
-        width: 100%;
-        height: rem(474);
-        object-fit: cover;
-    }
 }
 
 .visit__slider{
     margin-top: rem(18);
     @include mq(md){
-        margin-top: rem(48);
+        margin-top: rem(80);
     }
+}
+
+.visit__button{
+    text-align: center;
+    margin-top: rem(80);
 }

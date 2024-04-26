@@ -4,6 +4,7 @@
     margin-top: rem(0);
     @include mq(md){
         margin-top: rem(80);
+        padding-top: rem(70);
     }
 }
 
@@ -30,8 +31,8 @@
     bottom: rem(60);
     color: $black;
     @include mq(md){
-        right: 8%;
-        bottom: rem(70); // レスポンシブでも下からの位置を固定
+        left: 8%;
+        bottom: rem(60); // レスポンシブでも下からの位置を固定
     }
 }
 

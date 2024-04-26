@@ -6,9 +6,9 @@
     position: relative;
     background-image: url(../images/common/test2.png);
     background-position:center ;
-    background-repeat: no-repeat;
-    background-size: contain;   
-    height: rem(500); 
+    background-repeat: repeat-x;
+    background-size:contain;   
+    height: 100%; 
 }
 
 
@@ -28,7 +28,7 @@
     @include mq(md){
         background-image: url(../images/common/features-logo1.png);
         left: calc(50% - min(50%, rem(500)));
-        bottom: rem(280);
+        bottom: rem(300);
         width: rem(250);
         height: rem(250);
     }
@@ -48,7 +48,7 @@
     z-index: 100;
     @include mq(md){
         background-image: url(../images/common/features-logo2.png);
-        bottom: rem(280);
+        bottom: rem(300);
         right: calc(50% - min(50%, rem(500)));
         width: rem(250);
         height: rem(250);
@@ -66,12 +66,12 @@
         font-size: rem(56);
         font-weight: $medium;
         line-height: calc(50/40);
-        padding-top: rem(130);
     }
 }
 
 .features__subtitle{
-    margin-top: rem(20);
+    margin-top: rem(36);
+    font-size: rem(24);
     line-height: 2;
     letter-spacing: 0.15em;
 }
