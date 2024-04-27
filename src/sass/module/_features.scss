@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.body{
-    background-image: url(../images/common/tes.png);
-    background-position:center ;
-    background-repeat: repeat;
-    background-size:contain;   
-    height: 100%; 
-
-}
 
 .features{
     font-family: $second;

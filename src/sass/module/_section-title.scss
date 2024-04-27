@@ -11,12 +11,27 @@
 	font-size: rem(56);
 }
 
+.section-title__text--small::first-letter {
+	text-transform: capitalize;
+    color: $high-red;
+	font-size: rem(48);
+}
+
 .section-title__text{
 	font-size: rem(24);
     line-height: calc(40/28);
 	letter-spacing: 0.1em;
 	@include mq(md){
 		font-size: rem(48);
+	}
+}
+
+.section-title__text--small{
+	font-size: rem(24);
+    line-height: calc(40/28);
+	letter-spacing: 0.1em;
+	@include mq(md){
+		font-size: rem(36);
 	}
 }
 
