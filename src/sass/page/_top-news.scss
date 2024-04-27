@@ -1,9 +1,10 @@
 @use "global" as *;
 
 .top-news{
-    margin-top: rem(180);
+    margin-top: rem(80);
     padding-bottom: rem(112);
     @include mq(md){
+        margin-top: rem(180);
         padding-bottom: rem(50);
     }
 }

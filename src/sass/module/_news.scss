@@ -11,10 +11,10 @@
     background-size: contain;
     position: absolute;
     content: "";
-    bottom: rem(210);
-    right: calc(50% - min(50%, rem(200)));
-    width: rem(100);
-    height: rem(100);
+    top: rem(150);
+    right: calc(50% - min(50%, rem(300)));
+    width: rem(70);
+    height: rem(70);
     z-index: 100;
     @include mq(md){
         background-image: url(../images/common/news-logo.png);
@@ -34,17 +34,26 @@
 .news__bg{
     position: absolute;
     left: 0;
-    top: -85%;
+    top: -3%;
     width: 100%;
-    height: 200%;
+    height: 102%;
     z-index: -10;
+    @include mq(md){
+        top: -85%;
+        width: 100%;
+        height: 200%;
+    }
 }
 
 .news__bg img {
-    aspect-ratio: 1440/1150;
+    aspect-ratio: 375/1150;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 1440/1150;
+        object-fit: cover;
+    }
 }
 
 .news__tab {
@@ -92,10 +101,10 @@
     background-size: contain;
     position: absolute;
     content: "";
-    top: rem(-60);
-    left: calc(50% - min(50%, rem(500)));
-    width: rem(100);
-    height: rem(100);
+    top: rem(-100);
+    left: calc(50% - min(50%, rem(300)));
+    width: rem(70);
+    height: rem(70);
     z-index: 100;
     @include mq(md){
         background-image: url(../images/common/news-logo2.png);

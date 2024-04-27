@@ -188,8 +188,13 @@
     ------------------------------------------->
     <section class="top-news news">
         <div class="news__bg">
-            <img src="./assets/images/common/news-bg.png" alt="水面のアップ">
+            <picture>
+                <source srcset="./assets/images/common/news-bg.png" media="(min-width: 768px)">
+                <img src="./assets/images/common/bg-sp.png" alt="企業情報のメインビュー">
+            </picture>
+
         </div>
+        
         <div class="news__inner inner">
             <!-- タイトル 再利用 -->
             <div class="news__title section-title">

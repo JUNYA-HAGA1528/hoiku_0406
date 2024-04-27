@@ -37,7 +37,10 @@
 
 .footer__container{
     margin-top: rem(12);
-    width: 20%;
+    width: 100%;
+    @include mq(md){
+        width: 20%;
+    }
 }
 
 .footer-domicile{

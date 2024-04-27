@@ -1,8 +1,10 @@
 @use "global" as *;
 
 .domicile__flex{
-    display: flex;
-    padding: 0 rem(40);
+    @include mq(md){
+        display: flex;
+        padding: 0 rem(40);
+    }
 }
 
 .domicile__img {
@@ -15,21 +17,25 @@
 }
 
 .domicile__left{
-    width: 47%;
-    font-size: rem(26);
+    width: 100%;
+    font-size: rem(20);
     font-weight: $bold;
     letter-spacing: 0.05em;
+    @include mq(md){
+        width: 47%;
+        font-size: rem(26);
+    }
 }
 
 .domicile__right{
-    aspect-ratio: 360/177;
+    width: 100%;
     height: rem(177);
-    object-fit: cover;
-    height: rem(177);
+    margin-top: rem(20);
     @include mq(md){
         aspect-ratio: 300/220;
         width: 50%;
         height: rem(220);
+        margin-top: 0;
         margin-left: auto;
     }
 }

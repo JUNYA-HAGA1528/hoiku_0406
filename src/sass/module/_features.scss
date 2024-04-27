@@ -24,7 +24,7 @@
     @include mq(md){
         background-image: url(../images/common/features-logo1.png);
         left: calc(50% - min(50%, rem(500)));
-        bottom: rem(300);
+        bottom: rem(350);
         width: rem(250);
         height: rem(250);
     }
@@ -44,7 +44,7 @@
     z-index: 100;
     @include mq(md){
         background-image: url(../images/common/features-logo2.png);
-        bottom: rem(300);
+        bottom: rem(350);
         right: calc(50% - min(50%, rem(500)));
         width: rem(250);
         height: rem(250);
