@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.swiper-slide{
-	height: auto;
-}
-
-.swiper .swiper-wrapper{
-    transition-timing-function: linear;
-}
 
 .swiper__img{
 	width: rem(328);
@@ -21,3 +14,22 @@
 		aspect-ratio: 333/223;	
 	}
 }
+
+
+
+.swiper-slide {
+    opacity: .3; /* 左右のスライドを薄くする */
+    transform: scale(.8); /* 左右のスライドを小さくする */
+    transition: .7s; /* ゆっくり小さくさせる */
+  }
+
+  .swiper-slide-active {
+    opacity: 1; /* 中央のスライドは薄くしない */
+    transform: scale(1); /* 中央のスライドは小さくしない */
+    z-index: 1; /* 中央のスライドを一番上にする */
+  }
+
+
+  .swiper-pagination{
+	margin-top: rem(50);
+  }

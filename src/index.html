@@ -41,7 +41,7 @@
     <script defer src="./assets/js/script.js"></script>
 </head>
 
-<body>
+<body class="body">
 
     <!-----------------------------------------
         header 
@@ -71,7 +71,7 @@
                         <ul class="sp-nav__items">
                             <li class="sp-nav__item">
                                 <div class="sp-nav__item-title">
-                                    <a href="about.html">園のこだわり</a>
+                                    <a href="about.html">園について</a>
                                 </div>
                             </li>
                         </ul>
@@ -113,7 +113,7 @@
                     <li class="pc-nav__item">
                         <a href="about.html">
                             <div class="pc-nav__wrapper">
-                                <p class="pc-nav__ja">園のこだわり</p>
+                                <p class="pc-nav__ja">園について</p>
                             </div>
                         </a>
                     </li>
@@ -451,57 +451,49 @@
         </div>
 
 
-        <div class="visit__slider swiper js-visit-swiper">
-            <div class="swiper__items swiper-wrapper">
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper1">
+        <div class="visit__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper2">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper3">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper4">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper1">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper2">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper3">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper4">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper1">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper2">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper3">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper4">
+                <div class="swiper-slide">
+                    <img src="./assets/images/common/mv.png" alt="">
                 </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper1">
-                </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper2">
-                </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper3">
-                </div>
-                <div class="swiper__img swiper-slide">
-                    <img src="./assets/images/common/mv.png" alt="swiper4">
-                </div>
+
             </div>
+            <!-- 前後の矢印 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
         <div class="visit__button">
             <a href="information.html" class="button">詳細を見る</a>
@@ -514,24 +506,31 @@
         information 
     ------------------------------------------->
     <section class="top-information information">
-        <div class="information__inner">
-            <div class="visit__title section-title">
-                <h2 class="section-title__text">入園の案内</h2>
-            </div>
+        <div class="information__inner inner">
 
-            <div class="information__content">
-                <div class="information__img">
-                    <img src="./assets/images/common/mv.png" alt="">
+            <div class="information__wrapper">
+                <div class="information__image">
+                    <img src="./assets/images/common/main-bg1.png" alt="">
                 </div>
-                <div class="information__sentence">
-                    <p class="information_text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    <div class="information__button">
-                        <a href="" class="button">詳細を見る</a>
-                    </div>            
+                <div class="information__content">
+                    <h2 class="section-title__text">入園の案内</h2>
+                    <div class="back">
+                        <p class="information__text">
+                            子どもたちの笑顔が溢れる、<br>安心できる環境で<br>のびのびと成長。<br><br>入園をお待ちしています！
+                        </p>
+                        <div class="information__button">
+                            <a href="" class="button">詳細を見る</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
 
 
 
@@ -546,14 +545,14 @@
                         <ul class="footer-nav__items">
                             <li class="footer-nav__item">
                                 <div class="footer-nav__item-title">
-                                    <a href="campaign.html">園のこだわり
+                                    <a href="campaign.html">園について
                                     </a>
                                 </div>
-                                <div class="footer-nav__item-normal">
-                                    <a href="campaign.html#campaign">ライセンス取得</a>
-                                    <a href="campaign.html#campaign">貸切体験ダイビング</a>
-                                    <a href="campaign.html#campaign">ナイトダイビング</a>
-                                </div>
+                                <!-- <div class="footer-nav__item-normal">
+                                    <a href="campaign.html#campaign">園のこだわり</a>
+                                    <a href="campaign.html#campaign">園での生活</a>
+                                    <a href="campaign.html#campaign">一時保育</a>
+                                </div> -->
                             </li>
                         </ul>
                     </div>
@@ -563,11 +562,11 @@
                                 <div class="footer-nav__item-title">
                                     <a href="campaign.html">園での生活</a>
                                 </div>
-                                <div class="footer-nav__item-normal">
+                                <!-- <div class="footer-nav__item-normal">
                                     <a href="campaign.html#campaign">ライセンス取得</a>
                                     <a href="campaign.html#campaign">貸切体験ダイビング</a>
                                     <a href="campaign.html#campaign">ナイトダイビング</a>
-                                </div>
+                                </div> -->
                             </li>
                         </ul>
                     </div>
@@ -577,11 +576,11 @@
                                 <div class="footer-nav__item-title">
                                     <a href="campaign.html">一時保育</a>
                                 </div>
-                                <div class="footer-nav__item-normal">
+                                <!-- <div class="footer-nav__item-normal">
                                     <a href="campaign.html#campaign">ライセンス取得</a>
                                     <a href="campaign.html#campaign">貸切体験ダイビング</a>
                                     <a href="campaign.html#campaign">ナイトダイビング</a>
-                                </div>
+                                </div> -->
                             </li>
                         </ul>
                     </div>
@@ -592,11 +591,11 @@
                                 <div class="footer-nav__item-title">
                                     <a href="campaign.html">入園の案内</a>
                                 </div>
-                                <div class="footer-nav__item-normal">
+                                <!-- <div class="footer-nav__item-normal">
                                     <a href="campaign.html#campaign">ライセンス取得</a>
                                     <a href="campaign.html#campaign">貸切体験ダイビング</a>
                                     <a href="campaign.html#campaign">ナイトダイビング</a>
-                                </div>
+                                </div> -->
                             </li>
                         </ul>
                     </div>
@@ -607,11 +606,11 @@
                                 <div class="footer-nav__item-title">
                                     <a href="campaign.html">見学</a>
                                 </div>
-                                <div class="footer-nav__item-normal">
+                                <!-- <div class="footer-nav__item-normal">
                                     <a href="campaign.html#campaign">ライセンス取得</a>
                                     <a href="campaign.html#campaign">貸切体験ダイビング</a>
                                     <a href="campaign.html#campaign">ナイトダイビング</a>
-                                </div>
+                                </div> -->
                             </li>
                         </ul>
                     </div>

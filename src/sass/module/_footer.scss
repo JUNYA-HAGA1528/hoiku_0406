@@ -12,8 +12,6 @@
 }
 
 .footer__body{
-    display: flex;
-    justify-content: space-around;
     margin-top: rem(14);
     @include mq(md){
         margin-top: rem(0);
@@ -39,6 +37,7 @@
 
 .footer__container{
     margin-top: rem(12);
+    width: 20%;
 }
 
 .footer-domicile{

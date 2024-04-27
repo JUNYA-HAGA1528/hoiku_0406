@@ -35,25 +35,32 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     });
 
-    //Campaign swiper
-    var swiper = new Swiper(".js-visit-swiper", {
-        allowTouchMove: false, // マウスでの操作を無効化
-        centeredSlides: true, // 中央にスライドを配置
-        slidesPerView: "auto",
-        //スライド枚数 1.26枚
 
-        //〇〇以上の画面幅で〇〇枚のスライドと幅が〇〇pxと設定する
+    const swiper = new Swiper(".swiper", {
+        centeredSlides: true, // 1枚目のスライドを中央にする
+        loop: true, // ループさせる
+        speed: 700, // 少しゆっくり(デフォルトは300)
+        slidesPerView: 1.5, // スライドの表示枚数
+        autoplay: { // 自動再生
+          delay: 3000, // 3秒後に次のスライド
+          disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+        },
+
         breakpoints: {
-        768: {
-            spaceBetween: 40
-        }
+            768: {
+                slidesPerView: 3, // スライドの表示枚数
+            }
         },
-        spaceBetween: 15,
-        speed: 5000,
-        loop: true,
-        autoplay: {
-        delay: 0,
-        disableOnInteraction: false
+      
+        // ページネーション
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-    });
+        // 前後の矢印
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 });
