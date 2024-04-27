@@ -1,5 +1,8 @@
 @use "global" as *;
 
 .top-visit{
-    margin-top: rem(256);
+    margin-top: rem(176);
+    @include mq(md){
+        margin-top: rem(256);
+    }
 }

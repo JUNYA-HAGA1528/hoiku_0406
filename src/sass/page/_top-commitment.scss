@@ -1,5 +1,8 @@
 @use "global" as *;
 
 .top-commitment{
-    margin-top: rem(240);
+    margin-top: rem(144);
+    @include mq(md){
+        margin-top: rem(240);
+    }
 }

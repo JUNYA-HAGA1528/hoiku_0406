@@ -16,7 +16,7 @@
     background-size: contain;
     position: absolute;
     content: "";
-    bottom: rem(210);
+    bottom: rem(200);
     left: calc(50% - min(50%, rem(200)));
     width: rem(100);
     height: rem(100);
@@ -37,7 +37,7 @@
     background-size: contain;
     position: absolute;
     content: "";
-    bottom: rem(210);
+    bottom: rem(200);
     right: calc(50% - min(50%, rem(200)));
     width: rem(100);
     height: rem(100);
@@ -57,19 +57,26 @@
 
 .features__title{
     font-size: rem(24);
-    padding-top: rem(150);
+    padding-top: rem(50);
     @include mq(md){
         font-size: rem(56);
         font-weight: $medium;
+        padding-top: rem(150);
         line-height: calc(50/40);
     }
 }
 
 .features__subtitle{
-    margin-top: rem(36);
-    font-size: rem(24);
+    margin-top: rem(20);
+    font-size: rem(16);
     line-height: 2;
     letter-spacing: 0.15em;
+    @include mq(md){
+        margin-top: rem(36);
+        font-size: rem(24);
+        line-height: 2;
+        letter-spacing: 0.15em;
+    }
 }
 
 .features span {

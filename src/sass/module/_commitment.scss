@@ -11,7 +11,7 @@
     background-size: contain;
     position: absolute;
     content: "";
-    top: rem(-60);
+    top: rem(-80);
     left: calc(50% - min(50%, rem(500)));
     width: rem(100);
     height: rem(100);
@@ -29,10 +29,15 @@
 .commitment__bg{
     position: absolute;
     left: 0;
-    top: -15%;
+    top: -4%;
     width: 100%;
-    height: 130%;
+    height: 108%;
     z-index: -10;
+    @include mq(md){
+        top: -15%;
+        width: 100%;
+        height: 130%;
+    }
 }
 
 .commitment__bg img {

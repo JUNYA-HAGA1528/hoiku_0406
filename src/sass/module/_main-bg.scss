@@ -5,8 +5,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: rem(400);
-    margin-top: rem(240);
+    height: rem(250);
+    margin-top: rem(176);
     background-attachment: fixed;
-
+    @include mq(md){
+        margin-top: rem(240);
+        height: rem(400);
+    }
 }
