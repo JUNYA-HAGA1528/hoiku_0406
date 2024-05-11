@@ -22,7 +22,7 @@
 }
 
 .visit__swiper{
-    margin-top: rem(18);
+    margin-top: rem(60);
     @include mq(md){
         margin-top: rem(80);
     }
@@ -33,5 +33,58 @@
     margin-top: rem(60);
     @include mq(md){
         margin-top: rem(80);
+    }
+}
+
+
+
+.visit__aicon-first{
+    position: relative;
+}
+
+.visit__aicon-first::before {
+    background-image: url(../images/common/visit__aicon-first.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(-370);
+    left: calc(50% - min(50%, rem(280)));
+    width: rem(100);
+    height: rem(100);
+    z-index: 100;
+    @include mq(md){
+        background-image: url(../images/common/visit__aicon-first.png);
+        top: rem(150);
+        left: calc(50% - min(50%, rem(450)));
+        width: rem(150);
+        height: rem(150);
+    }
+}
+
+
+.visit__aicon-second{
+    position: relative;
+}
+
+.visit__aicon-second::before {
+    background-image: url(../images/common/visit__aicon-second.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(80);
+    right: calc(50% - min(50%, rem(280)));
+    width: rem(120);
+    height: rem(120);
+    z-index: 100;
+    @include mq(md){
+        background-image: url(../images/common/visit__aicon-second.png);
+        top: rem(30);
+        right: calc(50% - min(50%, rem(450)));
+        width: rem(150);
+        height: rem(150);
     }
 }

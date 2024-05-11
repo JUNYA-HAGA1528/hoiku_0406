@@ -3,7 +3,10 @@
 .footer{
     background-color: $low-red;
     color: $white;
-    border-radius: rem(300) rem(300) 0 0;
+    border-radius: rem(50) rem(50) 0 0;
+    @include mq(md){
+        border-radius: rem(300) rem(300) 0 0;
+    }
 }
 
 .footer__inner{

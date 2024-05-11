@@ -360,7 +360,10 @@
     ------------------------------------------->
     <section class="top-commitment commitment">
         <div class="commitment__bg">
-            <img src="./assets/images/common/news-bg.png" alt="水面のアップ">
+            <picture>
+                <source srcset="./assets/images/common/news-bg.png" media="(min-width: 768px)">
+                <img src="./assets/images/common/bg-sp.png" alt="企業情報のメインビュー">
+            </picture>
         </div>
 
 
@@ -432,6 +435,7 @@
                 </li>
             </ul>
         </div>
+        <div class="commitment__aicon"></div>
     </section>
 
 
@@ -500,6 +504,10 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+
+        <div class="visit__aicon-first"></div>
+        <div class="visit__aicon-second"></div>
+
         <div class="visit__button">
             <a href="information.html" class="button">詳細を見る</a>
         </div>

@@ -1,8 +1,30 @@
 @use "global" as *;
 
 .information{
-    
+    position: relative;
 }
+
+.information::before {
+    background-image: url(../images/common/information-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(-150);
+    right: calc(50% - min(50%, rem(280)));
+    width: rem(120);
+    height: rem(120);
+    z-index: 100;
+    @include mq(md){
+        background-image: url(../images/common/information-icon.png);
+        bottom: rem(-100);
+        right: calc(50% - min(50%, rem(200)));
+        width: rem(150);
+        height: rem(150);
+    }
+}
+
 
 .information__inner.inner{
     position: relative;
@@ -16,26 +38,27 @@
 }
 
 .information__inner::before{
-    position: absolute;
-    top: 73%;
-    right: 0;
-    z-index: -1;
-    display: block;
-    width: 60%;
-    height: 95%;
-    content: "";
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background-color: #FFFAF0;
-    border-radius: 25% 0 0 25% ;
+    @include mq(md){
+        position: absolute;
+        top: 70%;
+        right: rem(100);
+        z-index: -1;
+        display: block;
+        width: 60%;
+        height: 85%;
+        content: "";
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-color: #FFFFE0;
+        border-radius: 10%;
+    }
 }
 
 
 .information__wrapper{
-    color: $white;
+    color: $black;
     position: relative;
     @include mq(md){
-        color: $black;
         display: flex;
         align-items: center;
     }
@@ -54,12 +77,13 @@
     width: 100%;
     height: rem(400);
     object-fit: cover;
-    border-radius: 0 30% 30% 0;
+    border-radius: 0 ;
     @include mq(md){
         aspect-ratio: 1050/545;
         width: 100%;
         height: rem(545);
         object-fit: cover;
+        border-radius: 0 30% 30% 0;
     }
 }
 
@@ -71,12 +95,22 @@
     padding-left: 6%;
 }
 
+.information__title{
+    margin-top: rem(64);
+}
+
 .information__text{
-    margin-top: rem(96);
-    font-size: rem(24);
-    letter-spacing: 0.3em;
+    margin-top: rem(50);
+    font-size: rem(20);
+    letter-spacing: 0.1em;
+    @include mq(md){
+        margin-top: rem(110);
+        font-size: rem(24);
+        letter-spacing: 0.3em;
+    }
 }
 
 .information__button{
     margin-top: rem(60);
 }
+

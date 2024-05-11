@@ -8,7 +8,10 @@
 .section-title__text::first-letter {
 	text-transform: capitalize;
     color: $high-red;
-	font-size: rem(56);
+	font-size: rem(36);
+	@include mq(md){
+		font-size: rem(56);
+	}
 }
 
 .section-title__text--small::first-letter {
