@@ -62,5 +62,98 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-      });
+    });
+
+      // 同ページリンク sp
+  $(function(){
+    $('.js-tab-link a').click(function() {
+    //押されたのが.リストの何番目か調べる
+    var number = $('.js-tab-link a').index(this);
+    //表示領域を全部非表示にする
+    $('.page-introduction__tab-cards li').hide();
+    //押されたのと同じ番目のを表示する
+    $('.page-introduction__tab-cards li').eq(number).fadeIn();
+    //.activeがついてるのを外す
+    $('.js-tab-link a').removeClass('active');
+    $('.js-tab-info li').removeClass('active');
+    //押activeを付与してる      
+    $('.js-tab-info li').eq(number).addClass('active');
+    });
+  });
+  
+  // 同ページリンク footer
+  $(function(){
+    $('.js-tab-link-footer a').click(function() {
+    //押されたのが.リストの何番目か調べる
+    var number = $('.js-tab-link-footer a').index(this);
+    //表示領域を全部非表示にする
+    $('.page-introduction__tab-cards li').hide();
+    //押されたのと同じ番目のを表示する
+    $('.page-introduction__tab-cards li').eq(number).fadeIn();
+    //.activeがついてるのを外す
+    $('.js-tab-link-footer a').removeClass('active');
+    $('.js-tab-info li').removeClass('active');
+    //押activeを付与してる      
+    $('.js-tab-info li').eq(number).addClass('active');
+    });
+  });
+
+  // タブ
+  $(function(){
+    $('.js-tab-info li').click(function() {
+    //押されたのがリストの何番目か調べる
+    var index = $('.js-tab-info li').index(this);
+    //表示領域を全部非表示にする
+    $('.page-introduction__tab-cards li').hide();
+    //押されたのと同じ番目のを表示する
+    $('.page-introduction__tab-cards li').eq(index).fadeIn();
+    //.activeがついてるのを外す
+    $('.js-tab-info li').removeClass('active');
+    //押したやつにactiveを付与してる
+    $(this).addClass('active');
+    });
+  });
+
+  // 他ぺージ
+  $(function(){
+    //ハッシュタグ読み込み
+    var hash = location.hash;
+    if(hash.length){
+    //ハッシュがあったら
+    if(hash.match(/#info/)){
+    //ハッシュタグが「#tab◯」ってなってたら
+    //表示領域を全部非表示にする
+    $('.page-introduction__tab-cards li').hide();
+    //メニューに付いてる「class="active"」を削除
+    $('.js-tab-info li').removeClass('active');
+    //「#tab◯」を「◯」だけにする
+    var tabname = hash.slice(5.1);
+   
+    tabname = tabname - 1;
+    //n番目の内容を表示する
+    $('.page-introduction__tab-cards li').eq(tabname).fadeIn();
+    //n番目のメニューに「class="active"」を付与する
+    $('.js-tab-info li').eq(tabname).addClass('active');
+    }else{
+    //ハッシュタグが「#tab◯」じゃなかったら
+    //1番目のメニューに「class="active"」を付与する
+    $('.js-tab-info li').eq(0).addClass('active');
+    //内容部分を全部非表示にする
+    $('.page-introduction__tab-cards li').hide();
+    //1番目の内容を表示する
+    $('.page-introduction__tab-cards li').eq(0).fadeIn();
+    }
+    }else{
+    //ハッシュがなかったら（普通にページ開いたときとか）
+    //1番目のメニューに「class="active"」を付与する
+    $('.js-tab-info li').eq(0).addClass('active');
+    //内容部分を全部非表示にする
+    $('.page-introduction__tab-cards li').hide();
+    //1番目の表示内容を表示する
+    $('.page-introduction__tab-cards li').eq(0).fadeIn();
+    }
+  });
+
 });
+
+
