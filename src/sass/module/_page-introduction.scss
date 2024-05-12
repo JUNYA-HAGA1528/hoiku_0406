@@ -3,6 +3,10 @@
 .page-introduction__head{
     text-align: center;
     line-height: 2;
+    font-size: rem(24);
+    @include mq(md){
+        font-size: rem(36);
+    }
 }
 
 .page-introduction__contents{
@@ -31,10 +35,6 @@
 // 内容
 .page-introduction__tab-cards a {
     width: 100%;
-    margin-top: rem(15);
-    @include mq("md") {
-        margin-top: rem(23);
-    }
 }
   
 .page-introduction__tab-label a {
@@ -84,9 +84,8 @@
 }
   
 .page-introduction__card {
-    padding: rem(16) rem(24) rem(20);
+    padding: rem(16);
     @include mq("md") {
-        padding: rem(22);
         display: flex;
         gap: 4.66%;
         justify-content: center;
@@ -94,7 +93,9 @@
 }
   
 .page-introduction__body {
+    margin-top: rem(32);
     @include mq("md") {
+        margin-top: 0;
         width: 47.67%;
     }
 }
@@ -117,10 +118,16 @@
     line-height: 1.8;
     font-weight: 700;
 }
+
+.page-introduction__button{
+    margin-top: rem(30);
+    width: 70%;
+    margin: auto;
+}
   
 .page-introduction__img {
     position: relative;
-    margin-top: rem(32);
+    margin-top: rem(16);
     @include mq("md") {
         margin-top: 0;
         width: 47.67%;

@@ -2,6 +2,7 @@
 
 .top-information{
     margin-top: rem(196);
+    padding-bottom: rem(50);
     @include mq(md){
         margin-top: rem(256);
     }

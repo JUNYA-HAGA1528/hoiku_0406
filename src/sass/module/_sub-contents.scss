@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.page-contents__inner{
+    max-width: $max-width;
+}
+
+.page-contents__description{
+    text-align: center;
+    font-size: rem(16);
+    font-weight: $medium;
+    line-height: calc(32/16);
+    @include mq(md){
+        font-size: rem(14);
+        line-height: calc(32/16);
+    }
+}
+
+.page-contents__content{
+    margin-top: rem(50);
+    @include mq(md){
+        margin-top: rem(78);
+    }
+}
