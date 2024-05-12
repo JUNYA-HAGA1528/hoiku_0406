@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+
+    <!-- meta情報 -->
+    <title>保育園</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body class="body">
+
+    <!-----------------------------------------
+        header 
+    ------------------------------------------->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="index.html" class="header__logoLink">
+                    <img src="./assets/images/common/header-logo.png" alt="ヘッダーロゴ">
+                </a>
+            </h1>
+            <div class="header__text">
+                <a class="btn btn--header" href="">求人関係</a>
+                <a class="btn btn--header" href="">お問い合わせ</a>
+                <button class="header__hamburger  js-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            
+            <!-- headerメニュー sp -->
+            <nav class="header__sp-nav sp-nav js-drawer-menu">
+                <div class="sp-nav__wrapper">
+                    <div class="sp-nav__body">
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="introduction.html">園について</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="">園での生活</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="">一時保育</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="">入園の案内</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sp-nav__items">
+                            <li class="sp-nav__item">
+                                <div class="sp-nav__item-title">
+                                    <a href="">見学</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- headerメニュー pc -->
+            <nav class="header__pc-nav pc-nav u-desktop">
+                <ul class="pc-nav__list">
+                    <li class="pc-nav__item">
+                        <a href="introduction.html">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">園について</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">園での生活</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">一時保育</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">入園の案内</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item pc-nav__item--faq">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">見学</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item pc-nav__item--faq">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">求人関係</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">お問い合わせ</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-----------------------------------------
+        sub-mv
+    ------------------------------------------->
+    <section class="about-fv sub-mv">
+        <div class="sub-mv__inner">
+            <picture>
+                <source srcset="./assets/images/common/introduction-mv.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/introduction-mv.jpg" alt="企業情報のメインビュー">
+            </picture>
+            <div class="sub-mv__heading">
+                <h1 class="sub-mv__text">園について</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-----------------------------------------
+        sub-mv
+    ------------------------------------------->
+    section.
+
+
+
+
+
+
+    <!-----------------------------------------
+        footer
+    ------------------------------------------->
+    <footer class="top-footer footer">
+        <div class="footer__inner inner">
+            <div class="footer__body">
+                <div class="footer__wrapper ">
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="introduction.html">園について
+                                    </a>
+                                </div>
+                                <!-- <div class="footer-nav__item-normal">
+                                    <a href="campaign">園のこだわり</a>
+                                    <a href="campaign">園での生活</a>
+                                    <a href="campaign">一時保育</a>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="">園での生活</a>
+                                </div>
+                                <!-- <div class="footer-nav__item-normal">
+                                    <a href="campaign">ライセンス取得</a>
+                                    <a href="campaign">貸切体験ダイビング</a>
+                                    <a href="campaign">ナイトダイビング</a>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="">一時保育</a>
+                                </div>
+                                <!-- <div class="footer-nav__item-normal">
+                                    <a href="campaign">ライセンス取得</a>
+                                    <a href="campaign">貸切体験ダイビング</a>
+                                    <a href="campaign">ナイトダイビング</a>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="">入園の案内</a>
+                                </div>
+                                <!-- <div class="footer-nav__item-normal">
+                                    <a href="campaign">ライセンス取得</a>
+                                    <a href="campaign">貸切体験ダイビング</a>
+                                    <a href="campaign">ナイトダイビング</a>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__container footer-nav">
+                        <ul class="footer-nav__items">
+                            <li class="footer-nav__item">
+                                <div class="footer-nav__item-title">
+                                    <a href="">見学</a>
+                                </div>
+                                <!-- <div class="footer-nav__item-normal">
+                                    <a href="campaign">ライセンス取得</a>
+                                    <a href="campaign">貸切体験ダイビング</a>
+                                    <a href="campaign">ナイトダイビング</a>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-domicile domicile">
+                <div class="domicile__flex">
+                    <div class="domicile__left">
+                        <a href="index.html">
+                            <div class="domicile__img">
+                                <img src="./assets/images/common/header-logo.png" alt="">
+                            </div>    
+                        </a>
+                        
+                        <p class="domicile__address">〒959-1148 新潟県三条市尾崎24-5</p>
+                        <p class="domicile__TEL">TEL：0827-29-1608</p>
+                        <div class="domicile__privacy">                        
+                            <p><a href="">個人情報保護方針</a></p>
+                        </div>
+                    </div>
+                    <div class="domicile__right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12640.817206184412!2d138.88792085333532!3d37.620881848413056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4e3295bacb91f%3A0xf09b6f1baf424127!2z44CSOTU5LTExNDgg5paw5r2f55yM5LiJ5p2h5biC5bC-5bSO!5e0!3m2!1sja!2sjp!4v1713713526725!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!--コンタクト（共通パーツ）-->
+            <section class="footer__contact contact">
+                <div class="contact__inner">
+                    <ul class="contact__item">
+                        <li class="contact__list">
+                            <a href="" class="contact__link">
+                                <div class="contact__text">
+                                    <h2 class="contact__text-en">job&nbsp;offer</h2>
+                                    <p class="contact__text-jp">求人情報</p>    
+                                </div>
+                                <div class="contact__img">
+                                    <img src="./assets/images/common/recruit-rec.png" alt="ビルのアイコン">
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="contact__list">
+                            <a href="" class="contact__link">
+                                <div class="contact__text">
+                                    <h2 class="contact__text-en">contact&nbsp;us</h2>
+                                    <p class="contact__text-jp">お問い合わせはこちら</p>    
+                                </div>
+                                <div class="contact__img">
+                                    <img src="./assets/images/common/recruit-mail.png" alt="メールのアイコン">
+                                </div>
+                            </a>
+                        </li> 
+                    </ul> 
+                </div>
+            </section>
+
+            <p class="footer__copyright">
+                <small>Ⓒ2024.さくら保育園</small>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

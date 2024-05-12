@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.sub-mv__inner{
+    position: relative;
+}
+
+.sub-mv__heading{
+    position: absolute;
+    left: rem(350);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    @include mq(md){
+        top: 70%;
+    }
+}
+
+.sub-mv__text{
+    padding: rem(5) rem(20) rem(15);
+    color: $black;
+    background-color: #fffff0;
+    font-size: rem(40);
+    font-weight: $regular;
+    line-height: 1;
+    @include mq(md){
+        font-size: rem(90);
+    }
+}
+
+.sub-mv img{
+    height: rem(400);
+    object-fit: cover;
+    @include mq(md){
+        height: rem(350);
+        
+    }
+}
