@@ -10,14 +10,14 @@
 .article-item__image{
     @include mq(md){
         position: relative;
-        width: 44.4915%;
+        width: 50%;
         margin-right: auto;
         z-index: 200;
     }
 }
 
 .article-item__sentence{
-    background-image: url(../images/common/bg.jpg);
+    background-image: url(../images/common/bg-sp.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,9 +26,9 @@
         position: absolute;
         top: rem(57);
         right: 0;
-        width: 68.6983%;
+        width: 60%;
         margin-left: auto;
-        padding: rem(60) rem(50) rem(80) rem(224);
+        padding: rem(32) rem(32) rem(32) rem(160);
         z-index: 100;
         height: rem(350);
     }
@@ -55,7 +55,7 @@
 .article-item__image--reverse{
     @include mq(md){
         position: relative;
-        width: 44.4915%;
+        width: 50%;
         margin-right: 0;
         margin-left: auto;
         z-index: 200;
@@ -72,7 +72,7 @@
         position: absolute;
         top: rem(57);
         left: 0;
-        width: 68.6983%;
+        width: 60%;
         margin-left: 0;
         margin-right: auto;
         padding: rem(60) rem(274) rem(60) rem(50);
