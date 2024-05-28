@@ -1,0 +1,67 @@
+@use "global" as *;
+
+
+.company__container{
+    margin:rem(48) auto 0;
+    padding: rem(25) rem(16) ;
+    border: solid 1px #dcdcdc ;
+    background-color: $white;
+    @include mq(md){
+        padding: rem(25) rem(100) ;
+        width: 100;
+    }
+}
+
+.company__content{
+    font-size: rem(14);
+    line-height: calc(24/14);
+    @include mq(md){
+        display: flex;
+        font-size: rem(16);
+        line-height: calc(24/16);
+    }
+}
+
+.company__content + .company__content{
+    margin-top: rem(9.6);
+}
+
+.company__content:nth-child(n+3) {
+    @include mq(md){
+        margin-top: rem(12);
+    }
+}
+
+.company__content-title{
+    width: 23%;
+    border-bottom: solid 1px $black ;
+    padding-left: rem(8);
+    padding-bottom: rem(8);
+    font-size: rem(14);
+    line-height: calc(32/14);
+    letter-spacing: 0.02em;
+    @include mq(md){
+        width: 25%;
+        padding-left: rem(30);
+        padding-bottom: rem(9.6);
+        font-size: rem(24);
+    }
+}
+
+.company__content-text{
+    width: 100%;
+    border-bottom: solid 1px #CBCBCB ;
+    padding-left: rem(6.4);
+    padding-bottom: rem(11.2);
+    font-size: rem(14);
+    line-height: 1.7;
+    padding-top: rem(3.2);
+    @include mq(md){
+        width: 75%;
+        line-height: 2.3;
+        padding-top: rem(0);
+        padding-left: rem(50);
+        padding-bottom: rem(11.2);
+        font-size: rem(24);
+    }
+}
