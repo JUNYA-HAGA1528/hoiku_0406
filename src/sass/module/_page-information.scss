@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.page-information__table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+
+th, td {
+    padding: 8px;
+    border: solid 1px $black;
+}
+  
+th {
+    background-color: #fffff0;
+}
+  
+@media only screen and (max-width: 500px) {
+    .page-information__table tr,
+    .page-information__table th,
+    .page-information__table td {
+      display: block; /* セルを縦に */
+      border: none;
+    }
+    
+    .page-information__table {
+      border: solid 2px $black;
+      border-top: none;
+    }
+    
+    .page-information__table th {
+      border-top: solid 2px $black;
+    }
+    
+    .page-information__table td {
+      border-top: dashed 1px $black;
+    }
+}
