@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.table {
+    border: solid 2px $black;
+    border-top: none;
+    margin:rem(40) auto 0;
+    @include mq(md){
+        border-collapse: collapse;
+        width: 70%;
+    }
+}
+
+.table th {
+    width: 100%;
+    background-color: #fffff0;
+    @include mq(md){
+        border-top: solid 2px $black;
+        padding: rem(8);
+        border: solid 2px $black;
+        width: 30%;
+    }
+}
+
+.table td {
+    width: 100%;
+    padding: rem(20);
+    background-color: $white;
+    @include mq(md){
+        border: solid 2px $black;
+        width: 70%;
+        padding: rem(30);
+    }
+}
+  
+
+@media only screen and (max-width: 767px) {
+    .table tr,
+    .table th,
+    .table td {
+      display: block; /* セルを縦に */
+      border: none;
+    }
+    
+    .table th {
+      border-top: solid 2px $black;
+    }
+    
+    .table td {
+      border-top: dashed 1px $black;
+    }
+}
