@@ -31,10 +31,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     
     <!-- css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
     
     <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/assets/js/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -42,7 +44,10 @@
 </head>
 
 <body class="body">
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-----------------------------------------
         header 
     ------------------------------------------->
@@ -349,7 +354,7 @@
     <!-----------------------------------------
         features 
     ------------------------------------------->
-    <section class="top-features features">
+    <section class="top-features features" data-aos="fade-up"data-aos-anchor-placement="top-center" data-aos-duration="3000">
         <div class="features-picture"></div>
         <div class="features__inner inner">
             <h2 class="features__title">
@@ -381,7 +386,7 @@
             </div>
             
             <ul class="commitment__list commitment-cards">
-                <li class="commitment-cards__item">
+                <li class="commitment-cards__item" data-aos="flip-left" data-aos-delay="0">
                     <div class="commitment-card">
                         <div class="commitment-card__number">1</div>
                         <div class="commitment-card__body">
@@ -401,7 +406,7 @@
                         </div>
                     </div> 
                 </li>
-                <li class="commitment-cards__item commitment-cards__item--margin">
+                <li class="commitment-cards__item" data-aos="flip-left" data-aos-delay="200">
                     <div class="commitment-card">
                         <div class="commitment-card__number">2</div>
                         <div class="commitment-card__body">
@@ -421,7 +426,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="commitment-cards__item">
+                <li class="commitment-cards__item" data-aos="flip-left" data-aos-delay="400">
                     <div class="commitment-card">
                         <div class="commitment-card__number">3</div>
                         <div class="commitment-card__body">
@@ -526,7 +531,7 @@
     <!-----------------------------------------
         information 
     ------------------------------------------->
-    <section class="top-information information">
+    <section class="top-information information" data-aos="fade-right" data-aos-offset="-700" data-aos-easing="ease-in-sine" data-aos-duration="1000">
         <div class="information__inner inner">
 
             <div class="information__wrapper">
